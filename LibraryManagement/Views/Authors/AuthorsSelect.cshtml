@@ -1,0 +1,8 @@
+﻿@model IEnumerable<LibraryManagement.Models.Author>
+
+<select id="Author" name="Author" class="form-control">
+    @foreach (var item in Model)
+    {
+        <option value="@item.Id">@item.Surname, @item.Name</option>
+    }
+</select>
